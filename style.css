@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --drk-cyan: #3d8067;
+    /* background*/
+    --cream: #f2ebe3;
+    /*font color*/
+    --drk-blu: #1c232b;
+    --gry-blue: #6c7289;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--drk-blu);
+    background-color: var(--cream);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 250px 250px;
+
+}
+
+.left {
+    position: relative; 
+    overflow: hidden;
+}
+
+
+.left img {
+    width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+    border-radius: 6px 0 0 6px;
+}
+
+
+.right {
+    padding: 18px;
+    background-color: white;
+    border-radius: 0 6px 6px 0;
+}
+
+.right h1{
+    color: var(--gry-blue);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+
+
+}
+
+.right h2 {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.right p {
+    color: var(--gry-blue);
+    font-size: 13px;
+    line-height: 21px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.right h3 {
+    color: var(--drk-cyan);
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+
+span {
+    color: var(--gry-blue);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    font-size: 12px;
+    background-color: var(--drk-cyan);
+    color: white;
+    border: none;
+    padding: 13px 60px;
+    border-radius: 6px;
+    font-weight: 700;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+svg {
+    margin-right: 5px;
+    vertical-align: middle;
+
+}
+
+.attribution {
+    margin: 20px;
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    .card {
+        display: grid;
+        grid-template-columns: 300px;
+
+    }
+
+    .left img {
+        border-radius: 6px 6px 0 0;
+    }
+
+    .right {
+        border-radius: 0 0 6px 6px;
+    }
+
+    .right p {
+        font-size: 12px;
+    }
+    
+    .right h2 {
+        font-size: 29px;
+    }
+
+    .btn button {
+        width: 100%;
+    }
+    
+    }
+
+
+    
+    
